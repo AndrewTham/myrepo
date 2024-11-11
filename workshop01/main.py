@@ -1,11 +1,12 @@
 import json
 from random import choice
+from pathlib import Path
 
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
-with open("random.json", "r", encoding="utf-8") as f:
+with open(Path(__file__).parent / "random.json", "r", encoding="utf-8") as f:
     quotes = json.load(f)
 
 
