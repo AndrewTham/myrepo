@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .cookie-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .container img {
+        padding: 100px;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cookie-container">
+        <img src="{{ image_url }}" alt="Image from external source" />
+        <h3>{{ quote }}</h3>
+      </div>
+      <footer>Repository <a href="{{ repo_url }}">{{ repo_url }}</a></footer>
+    </div>
+  </body>
+</html>
